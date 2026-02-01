@@ -1,0 +1,209 @@
+02.01 15:31
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pulau Pandang | Wisata Alam Tropis</title>
+  <meta name="description" content="Pulau Pandang adalah destinasi wisata tropis dengan pantai indah, laut jernih, dan panorama memukau.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0d8ddb;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER / HERO */
+    header {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    header iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.45);
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 40px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      background: #ddd;
+    }
+
+    /* VIDEO */
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      border-radius: 15px;
+      border: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0d1b2a;
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+    <li><a href="#video">Video</a></li>
+  </ul>
+</nav>
+
+<header id="beranda">
+  <iframe
+    src="https://www.youtube.com/embed/WbFQMuTmndk?autoplay=1&mute=1&loop=1&playlist=WbFQMuTmndk&controls=0"
+    allow="autoplay; fullscreen">
+  </iframe>
+
+  <div class="hero">
+    <h1>Pulau Pandang</h1>
+    <p>Surga tropis tersembunyi dengan laut jernih dan panorama yang memukau</p>
+  </div>
+</header>
+
+<section id="tentang">
+  <h2>Tentang Pulau Pandang</h2>
+  <p style="text-align:center;max-width:800px;margin:auto">
+    Pulau Pandang merupakan destinasi wisata alam yang menawarkan pantai indah,
+    laut biru jernih, serta suasana tenang yang cocok untuk liburan dan relaksasi.
+  </p>
+</section>
+
+<section id="galeri">
+  <h2>Galeri Pulau</h2>
+  <div class="gallery">
+    <img src="gambar1.jpg" alt="Pantai Pulau Pandang">
+    <img src="gambar2.jpg" alt="Laut Jernih Pulau Pandang">
+    <img src="gambar3.jpg" alt="Pemandangan Alam Pulau Pandang">
+  </div>
+</section>
+
+<section id="video">
+  <h2>Video Keindahan Pulau</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/WbFQMuTmndk"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Pulau Pandang. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
